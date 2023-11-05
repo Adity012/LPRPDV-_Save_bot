@@ -7,17 +7,17 @@ import time
 import os
 import threading
 
-bot_token = os.environ.get("TOKEN", "") 
-api_hash = os.environ.get("HASH", "") 
-api_id = os.environ.get("ID", "")
-ss = os.environ.get("STRING", "")
+bot_token = os.environ.get("TOKEN", "6743075789:AAHLLrhohl6QFKgRHc0b4ViTAYXBTGxnayY") 
+api_hash = os.environ.get("HASH", "7543d780627ea4a25da5fe5696167440") 
+api_id = os.environ.get("ID", "29509604")
+ss = os.environ.get("STRING", "BQA1GvZU2lFOpoWTYspDX9Lwyeeclcxvy2KctTIQJuNpdD6EHA5J0qKR3a5HPxbtXMMufOfE_Y9prQLRdveNOWI86XAqMaDpKsWMB61wi1adNGfDS45yTNI1a8BNf9oZlWWtuxbuwYSp-4aFyIIAZ5odhWKEi5AOOE1pFpCuIKIC3qvs9KHN-IajniD7atUXdH-wUo4BMarZZWE0g6tgvEdezg2KdnxIpSQ_qc8v9SiXeFoq7pOwFJxjsMKvT9F_1pk9toLqAoyC9rcz4g0vbwNG6XOkXULsrpoh5arNitMS0L2cUEUqQjEMThHeItXv69jFXxjOUqsjV6y-iERpXRWUAAAAAWPsgLkA")
 bot = Client("mybot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
 acc = Client("myacc",api_id=api_id,api_hash=api_hash,session_string=ss)
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
- editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Must join:- @Bypass_restricted")
+ editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Must join:- @LPRPDV")
 @bot.on_message(filters.command(["bulk"]))
 async def account_login(bot: Client, m: Message):
  editable = await m.reply_text("**I am not an advanced bot")
